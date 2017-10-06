@@ -1,0 +1,12 @@
+version: '2'
+services:
+    mongonew:
+        build:
+           context: .
+           dockerfile: dockerfiles/mongodb/Dockerfile
+        command: bash -c "chown `whoami` /tmp/mongodb-27017.sock && mongod"
+        volumes:
+            - ./log:/log/
+        image: mymongo:1.0.0
+        ports:
+            - "27017:27017"
