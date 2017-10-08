@@ -5,12 +5,11 @@ then
  echo "Database is existing"
  if (mongo analysedb --eval "db.getCollectionNames()" | grep 'config')
  then
-   echo "collection there"
+   echo "collection found"
+   mongo analysedb --eval 'db.configdata.find()'
  else
-   echo "no collection"
-   mongorestore --db=analysedb --collection=config ./config.bson
+   echo "collection not found"
  fi
 else
- echo "Nope"
- #mongorestore -d analysedb ./
+ echo "Nope, database not found"
 fi
