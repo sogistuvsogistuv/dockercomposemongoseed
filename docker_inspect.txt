@@ -1,0 +1,248 @@
+[
+    {
+        "Id": "3a514fff209ca60e4f90c67acb5a878744c4a1606b7d7cdb91ed096872cdb000",
+        "Created": "2017-10-09T04:30:23.747946714Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "bash",
+            "-c",
+            "chown `whoami` /tmp/mongodb-27017.sock && mongod"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 24979,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2017-10-09T13:07:48.816864316Z",
+            "FinishedAt": "2017-10-09T04:32:31.159160167Z"
+        },
+        "Image": "sha256:faee16091e6268f93e2382b2b219585eaef3105be5d43d7b0f8834ae2722debe",
+        "ResolvConfPath": "/var/lib/docker/containers/3a514fff209ca60e4f90c67acb5a878744c4a1606b7d7cdb91ed096872cdb000/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/3a514fff209ca60e4f90c67acb5a878744c4a1606b7d7cdb91ed096872cdb000/hostname",
+        "HostsPath": "/var/lib/docker/containers/3a514fff209ca60e4f90c67acb5a878744c4a1606b7d7cdb91ed096872cdb000/hosts",
+        "LogPath": "/var/lib/docker/containers/3a514fff209ca60e4f90c67acb5a878744c4a1606b7d7cdb91ed096872cdb000/3a514fff209ca60e4f90c67acb5a878744c4a1606b7d7cdb91ed096872cdb000-json.log",
+        "Name": "/dockercomposemongoseed_mongonew_1",
+        "RestartCount": 0,
+        "Driver": "aufs",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "<Path>/dockercomposemongoseed/log:/log:rw"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "dockercomposemongoseed_default",
+            "PortBindings": {
+                "27017/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "27017"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": [],
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0
+        },
+        "GraphDriver": {
+            "Data": null,
+            "Name": "aufs"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "3278cc8351e91e71cd40e3626cffadc0aabbf2552d38069fe88a448cad618683",
+                "Source": "/var/lib/docker/volumes/3278cc8351e91e71cd40e3626cffadc0aabbf2552d38069fe88a448cad618683/_data",
+                "Destination": "/data/db",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "<Path>/dockercomposemongoseed/log",
+                "Destination": "/log",
+                "Mode": "rw",
+                "RW": true,
+                "Propagation": "rprivate"
+            },
+            {
+                "Type": "volume",
+                "Name": "98aa8d1c596c835ad00c92139d677d363f870e37ed4ad8636a77d98088e912d7",
+                "Source": "/var/lib/docker/volumes/98aa8d1c596c835ad00c92139d677d363f870e37ed4ad8636a77d98088e912d7/_data",
+                "Destination": "/data/configdb",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "3a514fff209c",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "27017/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.7",
+                "GPG_KEYS=0C49F3730359A14518585931BC711F9BA15703C6",
+                "MONGO_PACKAGE=mongodb-org",
+                "MONGO_REPO=repo.mongodb.org",
+                "MONGO_MAJOR=3.4",
+                "MONGO_VERSION=3.4.9",
+                "RESTORE=/home/restorefolder/"
+            ],
+            "Cmd": [
+                "bash",
+                "-c",
+                "chown `whoami` /tmp/mongodb-27017.sock && mongod"
+            ],
+            "Image": "mymongo:1.0.0",
+            "Volumes": {
+                "/data/configdb": {},
+                "/data/db": {},
+                "/log": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.docker.compose.config-hash": "fb3bc4e88a18c10ca2b41a502183cda58e67e4415d37967f6c4447200d7e5318",
+                "com.docker.compose.container-number": "1",
+                "com.docker.compose.oneoff": "False",
+                "com.docker.compose.project": "dockercomposemongoseed",
+                "com.docker.compose.service": "mongonew",
+                "com.docker.compose.version": "1.12.0"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "5f7d345e93e1fc8c1bb33fe76bd4f773c4504ee763934b16bca488d6abdf17ce",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "27017/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "27017"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/5f7d345e93e1",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "dockercomposemongoseed_default": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "mongonew",
+                        "3a514fff209c"
+                    ],
+                    "NetworkID": "039e99497ba0472cf7f3eeb7d6448f8c17b0a5f4a873f89f359f4c92d0cdcec9",
+                    "EndpointID": "aedf9d511ad90d199d772f98754a6c82424c0b09c2ed85b52c6ad7fdbf19d187",
+                    "Gateway": "172.20.0.1",
+                    "IPAddress": "172.20.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "03:42:ac:14:00:02",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
+
