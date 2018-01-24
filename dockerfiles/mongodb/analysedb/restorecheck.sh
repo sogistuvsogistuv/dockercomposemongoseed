@@ -1,5 +1,6 @@
 #/bin/bash
 
+#needs to be fixed, cause in newer mongodb images it is not working
 if (mongo analysedb --eval "db.adminCommand('listDatabases')" | grep '\"name\"\s\:\s\"analysedb\"')
 then
  echo "Database is existing"

@@ -7,6 +7,9 @@ services:
         command: bash -c "chown `whoami` /tmp/mongodb-27017.sock && mongod"
         volumes:
             - ./log:/log/
+            - mymongodata:/data/db
         image: mymongo:1.0.0
         ports:
             - "27017:27017"
+volumes:
+  mymongodata: {}
